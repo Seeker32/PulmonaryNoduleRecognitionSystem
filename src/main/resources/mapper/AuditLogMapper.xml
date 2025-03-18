@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seeker32.pulmonarynodulerecognitionsystem.mapper.AuditLogMapper">
+
+    <resultMap id="BaseResultMap" type="com.seeker32.pulmonarynodulerecognitionsystem.model.entity.AuditLog">
+            <id property="auditId" column="audit_id" jdbcType="INTEGER"/>
+            <result property="reportId" column="report_id" jdbcType="INTEGER"/>
+            <result property="reviewerId" column="reviewer_id" jdbcType="BIGINT"/>
+            <result property="auditResult" column="audit_result" jdbcType="INTEGER"/>
+            <result property="comment" column="comment" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="is_delete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        audit_id,report_id,reviewer_id,
+        audit_result,comment,create_time,
+        update_time,is_delete
+    </sql>
+</mapper>

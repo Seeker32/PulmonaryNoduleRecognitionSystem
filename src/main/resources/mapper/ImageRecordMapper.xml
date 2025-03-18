@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seeker32.pulmonarynodulerecognitionsystem.mapper.ImageRecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.seeker32.pulmonarynodulerecognitionsystem.model.entity.ImageRecord">
+            <id property="imageId" column="image_id" jdbcType="INTEGER"/>
+            <result property="patientId" column="patient_id" jdbcType="INTEGER"/>
+            <result property="scanTime" column="scan_time" jdbcType="TIMESTAMP"/>
+            <result property="deviceModel" column="device_model" jdbcType="VARCHAR"/>
+            <result property="storagePath" column="storage_path" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="is_delete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        image_id,patient_id,scan_time,
+        device_model,storage_path,create_time,
+        update_time,is_delete
+    </sql>
+</mapper>

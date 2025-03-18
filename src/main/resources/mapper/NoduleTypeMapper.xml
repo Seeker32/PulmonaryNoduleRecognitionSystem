@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seeker32.pulmonarynodulerecognitionsystem.mapper.NoduleTypeMapper">
+
+    <resultMap id="BaseResultMap" type="com.seeker32.pulmonarynodulerecognitionsystem.model.entity.NoduleType">
+            <id property="typeId" column="type_id" jdbcType="INTEGER"/>
+            <result property="detectionId" column="detection_id" jdbcType="INTEGER"/>
+            <result property="category" column="category" jdbcType="VARCHAR"/>
+            <result property="calcification" column="calcification" jdbcType="TINYINT"/>
+            <result property="lobulation" column="lobulation" jdbcType="TINYINT"/>
+            <result property="spiculation" column="spiculation" jdbcType="TINYINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="is_delete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        type_id,detection_id,category,
+        calcification,lobulation,spiculation,
+        create_time,update_time,is_delete
+    </sql>
+</mapper>
