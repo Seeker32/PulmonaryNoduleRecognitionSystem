@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.seeker32.pulmonarynodulerecognitionsystem.mapper.DoctorInfoMapper">
+<mapper namespace="com.seeker32.pulmonarynodulerecognitionsystem.mapper.UserMapper">
 
-    <resultMap id="BaseResultMap" type="com.seeker32.pulmonarynodulerecognitionsystem.model.entity.DoctorInfo">
+    <resultMap id="BaseResultMap" type="com.seeker32.pulmonarynodulerecognitionsystem.model.entity.User">
             <id property="userId" column="user_id" jdbcType="BIGINT"/>
             <result property="userName" column="user_name" jdbcType="VARCHAR"/>
             <result property="userPhone" column="user_phone" jdbcType="VARCHAR"/>

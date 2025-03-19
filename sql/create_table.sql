@@ -141,3 +141,5 @@ CREATE TABLE IF NOT EXISTS permission_rule (
    is_delete tinyint default 0 not null comment '是否删除',
    INDEX idx_role_resource (role, resource)
 ) COMMENT '权限规则表';
+
+ALTER TABLE doctor_info RENAME TO user;

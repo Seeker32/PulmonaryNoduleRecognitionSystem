@@ -9,11 +9,11 @@ import lombok.Data;
 
 /**
  * 用户信息
- * @TableName doctor_info
+ * @TableName user
  */
-@TableName(value ="doctor_info")
+@TableName(value ="user")
 @Data
-public class DoctorInfo {
+public class User {
     /**
      * ID
      */
