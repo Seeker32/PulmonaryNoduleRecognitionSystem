@@ -7,7 +7,7 @@ import com.seeker32.pulmonarynodulerecognitionsystem.mapper.DoctorInfoMapper;
 import org.springframework.stereotype.Service;
 
 /**
-* @author senlin
+* @author Seeker32
 * @description 针对表【doctor_info(用户信息)】的数据库操作Service实现
 * @createDate 2025-03-18 22:20:57
 */

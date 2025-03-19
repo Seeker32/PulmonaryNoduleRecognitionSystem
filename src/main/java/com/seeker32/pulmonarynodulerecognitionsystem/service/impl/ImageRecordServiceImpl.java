@@ -7,7 +7,7 @@ import com.seeker32.pulmonarynodulerecognitionsystem.mapper.ImageRecordMapper;
 import org.springframework.stereotype.Service;
 
 /**
-* @author senlin
+* @author Seeker32
 * @description 针对表【image_record(CT影像元数据)】的数据库操作Service实现
 * @createDate 2025-03-18 22:21:00
 */

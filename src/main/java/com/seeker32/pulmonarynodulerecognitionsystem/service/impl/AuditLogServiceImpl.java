@@ -7,7 +7,7 @@ import com.seeker32.pulmonarynodulerecognitionsystem.mapper.AuditLogMapper;
 import org.springframework.stereotype.Service;
 
 /**
-* @author senlin
+* @author Seeker32
 * @description 针对表【audit_log(报告审核记录)】的数据库操作Service实现
 * @createDate 2025-03-18 22:19:57
 */
